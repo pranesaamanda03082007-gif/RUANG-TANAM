@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Perawatan - Ruang Tanam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🌿 Ruang Tanam</h1>
+    <p>Aplikasi Pencatatan Tanaman dan Jadwal Perawatan</p>
+</header>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Menu Utama</h3>
+        <a href="dashboard.html">Beranda</a>
+        <a href="index.html">Jenis Tanaman</a>
+        <a href="tanaman.html">Data Tanaman</a>
+        <a href="jenis-perawatan.html">Jenis Perawatan</a>
+        <a class="aktif" href="catatan-perawatan.html">Catatan Perawatan</a>
+        <a href="pencarian.html">Pencarian</a>
+        <a href="perawatan-terakhir.html">Perawatan Terakhir</a>
+        <a href="rekap.html">Rekap Data</a>
+        <a href="login.html">Keluar</a>
+    </aside>
+    <main>
+        <h2 class="judul-halaman">Catatan Perawatan</h2>
+        <p class="deskripsi">Catat kegiatan yang sudah dilakukan pada tanaman.</p>
+        <div class="panel">
+            <h3>Tambah Catatan</h3>
+            <form>
+                <label>Nama Tanaman</label>
+                <select>
+                    <option value="">Pilih tanaman</option>
+                    <option>Monstera</option>
+                </select>
+                <label>Jenis Perawatan</label>
+                <select>
+                    <option value="">Pilih perawatan</option>
+                    <option>Penyiraman</option>
+                    <option>Pemupukan</option>
+                    <option>Pemangkasan</option>
+                    <option>Penggantian Pot</option>
+                </select>
+                <label>Tanggal Perawatan</label>
+                <input type="date">
+                <label>Catatan Tambahan</label>
+                <textarea placeholder="Contoh: Tanaman disiram pada pagi hari"></textarea>
+                <button type="button">Simpan Catatan</button>
+                <button type="reset" class="tombol tombol-kuning">Reset</button>
+            </form>
+        </div>
+        <div class="panel">
+            <h3>Riwayat Catatan</h3>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Tanaman</th>
+                    <th>Perawatan</th>
+                    <th>Tanggal</th>
+                    <th>Catatan</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Monstera</td>
+                    <td>Penyiraman</td>
+                    <td>2026-10-25</td>
+                    <td>Disiram pagi hari</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

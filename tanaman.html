@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tanaman - Ruang Tanam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🌿 Ruang Tanam</h1>
+    <p>Aplikasi Pencatatan Tanaman dan Jadwal Perawatan</p>
+</header>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Menu Utama</h3>
+        <a href="dashboard.html">Beranda</a>
+        <a href="index.html">Jenis Tanaman</a>
+        <a class="aktif" href="tanaman.html">Data Tanaman</a>
+        <a href="jenis-perawatan.html">Jenis Perawatan</a>
+        <a href="catatan-perawatan.html">Catatan Perawatan</a>
+        <a href="pencarian.html">Pencarian</a>
+        <a href="perawatan-terakhir.html">Perawatan Terakhir</a>
+        <a href="rekap.html">Rekap Data</a>
+        <a href="login.html">Keluar</a>
+    </aside>
+    <main>
+        <h2 class="judul-halaman">Data Tanaman</h2>
+        <p class="deskripsi">Catat informasi tanaman yang ada dalam koleksimu.</p>
+        <div class="panel">
+            <h3>Tambah Tanaman</h3>
+            <form>
+                <label>Nama Tanaman</label>
+                <input type="text" placeholder="Contoh: Monstera">
+                <label>Jenis Tanaman</label>
+                <select>
+                    <option value="">Pilih jenis tanaman</option>
+                    <option>Tanaman Hias</option>
+                    <option>Tanaman Buah</option>
+                    <option>Tanaman Sayur</option>
+                </select>
+                <label>Lokasi Tanaman</label>
+                <input type="text" placeholder="Contoh: Teras rumah">
+                <label>Tanggal Ditambahkan</label>
+                <input type="date">
+                <label>Catatan</label>
+                <textarea placeholder="Masukkan informasi tanaman"></textarea>
+                <button type="button">Simpan Tanaman</button>
+                <button type="reset" class="tombol tombol-kuning">Reset</button>
+            </form>
+        </div>
+        <div class="panel">
+            <h3>Daftar Tanaman</h3>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Tanaman</th>
+                    <th>Jenis</th>
+                    <th>Lokasi</th>
+                    <th>Tanggal Ditambahkan</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Monstera</td>
+                    <td>Tanaman Hias</td>
+                    <td>Teras rumah</td>
+                    <td>2026-10-20</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

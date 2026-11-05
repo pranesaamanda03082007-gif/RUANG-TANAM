@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Tanaman - Ruang Tanam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🌿 Ruang Tanam</h1>
+    <p>Aplikasi Pencatatan Tanaman dan Jadwal Perawatan</p>
+</header>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Menu Utama</h3>
+        <a href="dashboard.html">Beranda</a>
+        <a class="aktif" href="index.html">Jenis Tanaman</a>
+        <a href="tanaman.html">Data Tanaman</a>
+        <a href="jenis-perawatan.html">Jenis Perawatan</a>
+        <a href="catatan-perawatan.html">Catatan Perawatan</a>
+        <a href="pencarian.html">Pencarian</a>
+        <a href="perawatan-terakhir.html">Perawatan Terakhir</a>
+        <a href="rekap.html">Rekap Data</a>
+        <a href="login.html">Keluar</a>
+    </aside>
+    <main>
+        <h2 class="judul-halaman">Jenis Tanaman</h2>
+        <p class="deskripsi">Kelola kategori atau kelompok tanaman yang kamu miliki.</p>
+        <div class="panel">
+            <h3>Tambah Jenis Tanaman</h3>
+            <form>
+                <label>Nama Jenis Tanaman</label>
+                <input type="text" placeholder="Contoh: Tanaman Hias">
+                <label>Keterangan</label>
+                <textarea placeholder="Masukkan keterangan jenis tanaman"></textarea>
+                <button type="button">Simpan Jenis</button>
+                <button type="reset" class="tombol tombol-kuning">Reset</button>
+            </form>
+        </div>
+        <div class="panel">
+            <h3>Daftar Jenis Tanaman</h3>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Jenis</th>
+                    <th>Keterangan</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tanaman Hias</td>
+                    <td>Tanaman untuk memperindah ruangan</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tanaman Buah</td>
+                    <td>Tanaman yang menghasilkan buah</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

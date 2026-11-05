@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Perawatan - Ruang Tanam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🌿 Ruang Tanam</h1>
+    <p>Aplikasi Pencatatan Tanaman dan Jadwal Perawatan</p>
+</header>
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Menu Utama</h3>
+        <a href="dashboard.html">Beranda</a>
+        <a href="index.html">Jenis Tanaman</a>
+        <a href="tanaman.html">Data Tanaman</a>
+        <a class="aktif" href="jenis-perawatan.html">Jenis Perawatan</a>
+        <a href="catatan-perawatan.html">Catatan Perawatan</a>
+        <a href="pencarian.html">Pencarian</a>
+        <a href="perawatan-terakhir.html">Perawatan Terakhir</a>
+        <a href="rekap.html">Rekap Data</a>
+        <a href="login.html">Keluar</a>
+    </aside>
+    <main>
+        <h2 class="judul-halaman">Jenis Perawatan</h2>
+        <p class="deskripsi">Kelola kegiatan perawatan yang diperlukan oleh tanaman.</p>
+        <div class="panel">
+            <h3>Tambah Jenis Perawatan</h3>
+            <form>
+                <label>Nama Perawatan</label>
+                <input type="text" placeholder="Contoh: Penyiraman">
+                <label>Frekuensi Perawatan</label>
+                <select>
+                    <option>Setiap hari</option>
+                    <option>Setiap 3 hari</option>
+                    <option>Setiap minggu</option>
+                    <option>Setiap bulan</option>
+                </select>
+                <label>Keterangan</label>
+                <textarea placeholder="Keterangan perawatan"></textarea>
+                <button type="button">Simpan Perawatan</button>
+                <button type="reset" class="tombol tombol-kuning">Reset</button>
+            </form>
+        </div>
+        <div class="panel">
+            <h3>Daftar Jenis Perawatan</h3>
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Perawatan</th>
+                    <th>Frekuensi</th>
+                    <th>Keterangan</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Penyiraman</td>
+                    <td>Setiap hari</td>
+                    <td>Memberikan air pada tanaman</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pemupukan</td>
+                    <td>Setiap minggu</td>
+                    <td>Memberikan nutrisi pada tanaman</td>
+                    <td><button type="button">Edit</button> <button type="button" class="tombol-merah">Hapus</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>
